@@ -11,7 +11,7 @@
   --color-primary-contrast: #ffffff;
 }
 
-html[light] {
+html.light {
   --color-text: #0a0a0a;
   --color-error: #dc2626;
   --color-paper: #ffffff;
@@ -22,5 +22,13 @@ html[light] {
 
 html,
 body {
-  @apply bg-background text-text w-screen h-screen;
+  @apply h-screen w-screen bg-background text-text underline-offset-8;
+}
+
+.menu-button {
+  @apply flex items-center justify-center gap-2 rounded-md px-4 py-3 transition-colors ease-in hover:bg-zinc-200 active:bg-zinc-300 dark:hover:bg-zinc-800 dark:active:bg-zinc-700;
+}
+
+.menu-button--active {
+  @apply flex items-center justify-center gap-2 rounded-md bg-zinc-200 px-4 py-3 transition-colors ease-in hover:bg-zinc-300 active:bg-zinc-400 dark:bg-zinc-800 dark:hover:bg-zinc-700 dark:active:bg-zinc-600;
 }
