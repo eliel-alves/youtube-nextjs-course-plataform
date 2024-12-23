@@ -1,3 +1,3 @@
 export default function PageHome() {
-  return <main>Hello World!</main>;
+  return <main className="">Hello World!</main>;
 }
