@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <header className="flex w-full justify-center border-b border-zinc-200 bg-gray-100 dark:border-zinc-800 dark:bg-zinc-900">
-      <div className="container flex items-center justify-between p-2 md:p-3">
+      <div className="container flex items-center justify-between p-3 md:px-4 md:py-3">
         <Link
           href="/"
           className="flex items-center gap-3 font-semibold md:text-lg"

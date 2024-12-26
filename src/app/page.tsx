@@ -1,5 +1,6 @@
-import Card from '@/components/card/card';
 import { Metadata } from 'next';
+import Card from '@/components/card/card';
+import Section from '@/components/section/section';
 
 export const metadata: Metadata = {
   title: 'YouCourse - Página inicial',
@@ -7,8 +8,9 @@ export const metadata: Metadata = {
 
 export default function PageHome() {
   return (
-    <main className="">
-      <Card
+    <main className="flex justify-center">
+      <Section />
+      {/* <Card
         title="Curso Criação de Landing Pages com WordPress e Elementor"
         description="Aprenda neste tutorial completo a Como criar uma Landing Page no
             WordPress e Elementor Grátis. Ou seja, como criar uma Página de
@@ -23,7 +25,7 @@ export default function PageHome() {
             objetivo é vender um produto ou serviço."
         imageUrl="https://i.ytimg.com/vi/5Dkw-Cg-aeI/hqdefault.jpg"
         href="/courses/123"
-      />
+      /> */}
     </main>
   );
 }

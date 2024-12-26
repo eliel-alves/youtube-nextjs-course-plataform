@@ -10,8 +10,8 @@ interface CardProps {
 
 const Card = ({ title, description, imageUrl, href }: CardProps) => {
   return (
-    <Link href={href} className="block md:max-w-[400px]">
-      <article className="flex flex-col gap-2 rounded-xl border bg-white p-2 dark:border-zinc-800 dark:bg-zinc-900 md:hover:bg-primary">
+    <Link href={href} className="block">
+      <article className="flex flex-col gap-2 rounded-xl border bg-white p-2 transition-all hover:-translate-y-2 hover:border-primary dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-primary md:hover:bg-zinc-100/10">
         <Image
           src={imageUrl}
           width={1000}
